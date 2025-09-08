@@ -56,7 +56,7 @@ st.session_state.body_part_affected = st.text_input(
     "Body Part Affected", value=st.session_state.body_part_affected
 )
 
-if st.button("Apply: ")
+if st.button("Apply: "):
   if not st.session_state.age or not st.session_state.gender or not st.session_state.issue or not st.session_state.body_part_affected:
         st.error("Please enter all required information")
   else:
